@@ -1,0 +1,60 @@
+[env]
+_.file = { path = ".env", optional = true }
+
+[tasks.bun-deps]
+description = "Install development dependencies"
+run = "bun install --frozen-lockfile"
+
+[tasks.build]
+description = "Build the release binary with embedded assets"
+run = "cargo build --release --locked"
+
+[tasks.run]
+description = "Run the local dashboard"
+run = "cargo run --locked"
+
+[tasks.dev]
+description = "Prepare dependencies and run the development dashboard"
+depends = ["bun-deps"]
+run = "cargo run --locked"
+
+[tasks.demo]
+description = "Run with fictional projects"
+env.DASHBOARD_AUTH = "demo"
+run = "cargo run --locked"
+
+[tasks.test]
+description = "Run Rust unit tests"
+run = "cargo test --workspace --locked"
+
+[tasks.test-browser]
+description = "Check browser workflows against a running server"
+depends = ["bun-deps"]
+run = "bun test tests"
+
+[tasks.check]
+description = "Check formatting, TypeScript types and Clippy warnings"
+depends = ["bun-deps"]
+run = [
+  "cargo fmt --all -- --check",
+  "cargo clippy --workspace --all-targets --locked -- -D warnings",
+  "bunx --bun tsc --noEmit",
+  "bunx --bun prettier --check .github scripts static tests README.md AGENTS.md CHANGELOG.md package.json tsconfig.json",
+]
+
+[tasks.format]
+description = "Format code and documentation"
+depends = ["bun-deps"]
+run = [
+  "cargo fmt --all",
+  "bunx --bun prettier --write .github scripts static tests README.md AGENTS.md CHANGELOG.md package.json tsconfig.json",
+]
+
+[tasks.test-browser-ci]
+description = "Build, start a demo server and check embedded assets and browser workflows"
+depends = ["bun-deps", "build"]
+run = "bun scripts/browser.ts"
+
+[tasks.package]
+description = "Package and smoke-test a previously built Rust target"
+run = "bun scripts/package.ts"

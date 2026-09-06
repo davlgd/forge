@@ -1,0 +1,1128 @@
+{
+  "issues": [
+    {
+      "id": "demo-orbit-issues-100",
+      "number": 100,
+      "title": "Preserve filters after refreshing the dashboard",
+      "url": "https://github.com/studio/orbit/issues/100",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-105",
+      "number": 105,
+      "title": "Show useful feedback when the API is unavailable",
+      "url": "https://github.com/studio/orbit/issues/105",
+      "createdAt": "2026-08-06T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-110",
+      "number": 110,
+      "title": "Include a direct link to the failing check",
+      "url": "https://github.com/studio/orbit/issues/110",
+      "createdAt": "2026-08-11T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-atlas-issues-100",
+      "number": 100,
+      "title": "Preserve filters after refreshing the dashboard",
+      "url": "https://github.com/studio/atlas/issues/100",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-atlas-issues-105",
+      "number": 105,
+      "title": "Show useful feedback when the API is unavailable",
+      "url": "https://github.com/studio/atlas/issues/105",
+      "createdAt": "2026-08-06T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-field-notes-issues-100",
+      "number": 100,
+      "title": "Preserve filters after refreshing the dashboard",
+      "url": "https://github.com/studio/field-notes/issues/100",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "field-notes",
+        "nameWithOwner": "studio/field-notes"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-s3-explorer-issues-100",
+      "number": 100,
+      "title": "Preserve filters after refreshing the dashboard",
+      "url": "https://github.com/studio/s3-explorer/issues/100",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "s3-explorer",
+        "nameWithOwner": "studio/s3-explorer"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-pulse-issues-100",
+      "number": 100,
+      "title": "Preserve filters after refreshing the dashboard",
+      "url": "https://github.com/studio/pulse/issues/100",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "pulse",
+        "nameWithOwner": "studio/pulse"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-dashboard-issues-100",
+      "number": 100,
+      "title": "Preserve filters after refreshing the dashboard",
+      "url": "https://github.com/studio/dashboard/issues/100",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "dashboard",
+        "nameWithOwner": "studio/dashboard"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-101",
+      "number": 101,
+      "title": "Keyboard focus disappears after closing the dialog",
+      "url": "https://github.com/studio/orbit/issues/101",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-106",
+      "number": 106,
+      "title": "Support searching by label and issue number",
+      "url": "https://github.com/studio/orbit/issues/106",
+      "createdAt": "2026-08-07T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 1,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-111",
+      "number": 111,
+      "title": "Respect the system motion preference",
+      "url": "https://github.com/studio/orbit/issues/111",
+      "createdAt": "2026-08-12T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-atlas-issues-101",
+      "number": 101,
+      "title": "Keyboard focus disappears after closing the dialog",
+      "url": "https://github.com/studio/atlas/issues/101",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-field-notes-issues-101",
+      "number": 101,
+      "title": "Keyboard focus disappears after closing the dialog",
+      "url": "https://github.com/studio/field-notes/issues/101",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "field-notes",
+        "nameWithOwner": "studio/field-notes"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-s3-explorer-issues-101",
+      "number": 101,
+      "title": "Keyboard focus disappears after closing the dialog",
+      "url": "https://github.com/studio/s3-explorer/issues/101",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "s3-explorer",
+        "nameWithOwner": "studio/s3-explorer"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-pulse-issues-101",
+      "number": 101,
+      "title": "Keyboard focus disappears after closing the dialog",
+      "url": "https://github.com/studio/pulse/issues/101",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "pulse",
+        "nameWithOwner": "studio/pulse"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-102",
+      "number": 102,
+      "title": "Document the proxy callback configuration",
+      "url": "https://github.com/studio/orbit/issues/102",
+      "createdAt": "2026-08-03T09:00:00Z",
+      "updatedAt": "2026-09-04T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 2,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-107",
+      "number": 107,
+      "title": "Keep the selected account after a reload",
+      "url": "https://github.com/studio/orbit/issues/107",
+      "createdAt": "2026-08-08T09:00:00Z",
+      "updatedAt": "2026-09-04T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 2,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-atlas-issues-102",
+      "number": 102,
+      "title": "Document the proxy callback configuration",
+      "url": "https://github.com/studio/atlas/issues/102",
+      "createdAt": "2026-08-03T09:00:00Z",
+      "updatedAt": "2026-09-04T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 2,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-s3-explorer-issues-102",
+      "number": 102,
+      "title": "Document the proxy callback configuration",
+      "url": "https://github.com/studio/s3-explorer/issues/102",
+      "createdAt": "2026-08-03T09:00:00Z",
+      "updatedAt": "2026-09-04T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "s3-explorer",
+        "nameWithOwner": "studio/s3-explorer"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 2,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-pulse-issues-102",
+      "number": 102,
+      "title": "Document the proxy callback configuration",
+      "url": "https://github.com/studio/pulse/issues/102",
+      "createdAt": "2026-08-03T09:00:00Z",
+      "updatedAt": "2026-09-04T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "pulse",
+        "nameWithOwner": "studio/pulse"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 2,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-103",
+      "number": 103,
+      "title": "Handle an empty repository without errors",
+      "url": "https://github.com/studio/orbit/issues/103",
+      "createdAt": "2026-08-04T09:00:00Z",
+      "updatedAt": "2026-09-03T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 3,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-108",
+      "number": 108,
+      "title": "Fix the light theme contrast on status badges",
+      "url": "https://github.com/studio/orbit/issues/108",
+      "createdAt": "2026-08-09T09:00:00Z",
+      "updatedAt": "2026-09-03T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 3,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-atlas-issues-103",
+      "number": 103,
+      "title": "Handle an empty repository without errors",
+      "url": "https://github.com/studio/atlas/issues/103",
+      "createdAt": "2026-08-04T09:00:00Z",
+      "updatedAt": "2026-09-03T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 3,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-s3-explorer-issues-103",
+      "number": 103,
+      "title": "Handle an empty repository without errors",
+      "url": "https://github.com/studio/s3-explorer/issues/103",
+      "createdAt": "2026-08-04T09:00:00Z",
+      "updatedAt": "2026-09-03T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "s3-explorer",
+        "nameWithOwner": "studio/s3-explorer"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 3,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-104",
+      "number": 104,
+      "title": "Improve the narrow screen navigation",
+      "url": "https://github.com/studio/orbit/issues/104",
+      "createdAt": "2026-08-05T09:00:00Z",
+      "updatedAt": "2026-09-02T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 4,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-issues-109",
+      "number": 109,
+      "title": "Make the empty state explain the next action",
+      "url": "https://github.com/studio/orbit/issues/109",
+      "createdAt": "2026-08-10T09:00:00Z",
+      "updatedAt": "2026-09-02T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 4,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-atlas-issues-104",
+      "number": 104,
+      "title": "Improve the narrow screen navigation",
+      "url": "https://github.com/studio/atlas/issues/104",
+      "createdAt": "2026-08-05T09:00:00Z",
+      "updatedAt": "2026-09-02T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 4,
+      "isDraft": false,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-s3-explorer-issues-104",
+      "number": 104,
+      "title": "Improve the narrow screen navigation",
+      "url": "https://github.com/studio/s3-explorer/issues/104",
+      "createdAt": "2026-08-05T09:00:00Z",
+      "updatedAt": "2026-09-02T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "s3-explorer",
+        "nameWithOwner": "studio/s3-explorer"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 4,
+      "isDraft": false,
+      "reviewDecision": null
+    }
+  ],
+  "prs": [
+    {
+      "id": "demo-orbit-prs-200",
+      "number": 200,
+      "title": "Add accessible keyboard navigation",
+      "url": "https://github.com/studio/orbit/pull/200",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "demo-atlas-prs-200",
+      "number": 200,
+      "title": "Add accessible keyboard navigation",
+      "url": "https://github.com/studio/atlas/pull/200",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "demo-tiny-cloud-prs-200",
+      "number": 200,
+      "title": "Add accessible keyboard navigation",
+      "url": "https://github.com/studio/tiny-cloud/pull/200",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "tiny-cloud",
+        "nameWithOwner": "studio/tiny-cloud"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "demo-s3-explorer-prs-200",
+      "number": 200,
+      "title": "Add accessible keyboard navigation",
+      "url": "https://github.com/studio/s3-explorer/pull/200",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "s3-explorer",
+        "nameWithOwner": "studio/s3-explorer"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "demo-dashboard-prs-200",
+      "number": 200,
+      "title": "Add accessible keyboard navigation",
+      "url": "https://github.com/studio/dashboard/pull/200",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "dashboard",
+        "nameWithOwner": "studio/dashboard"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "demo-upstream-fork-prs-200",
+      "number": 200,
+      "title": "Add accessible keyboard navigation",
+      "url": "https://github.com/studio/upstream-fork/pull/200",
+      "createdAt": "2026-08-01T09:00:00Z",
+      "updatedAt": "2026-09-06T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "upstream-fork",
+        "nameWithOwner": "studio/upstream-fork"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 0,
+      "isDraft": false,
+      "reviewDecision": "REVIEW_REQUIRED"
+    },
+    {
+      "id": "demo-orbit-prs-201",
+      "number": 201,
+      "title": "Fix empty repository handling",
+      "url": "https://github.com/studio/orbit/pull/201",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": true,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-atlas-prs-201",
+      "number": 201,
+      "title": "Fix empty repository handling",
+      "url": "https://github.com/studio/atlas/pull/201",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "atlas",
+        "nameWithOwner": "studio/atlas"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": true,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-tiny-cloud-prs-201",
+      "number": 201,
+      "title": "Fix empty repository handling",
+      "url": "https://github.com/studio/tiny-cloud/pull/201",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "tiny-cloud",
+        "nameWithOwner": "studio/tiny-cloud"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": true,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-dashboard-prs-201",
+      "number": 201,
+      "title": "Fix empty repository handling",
+      "url": "https://github.com/studio/dashboard/pull/201",
+      "createdAt": "2026-08-02T09:00:00Z",
+      "updatedAt": "2026-09-05T10:00:00Z",
+      "author": {
+        "login": "sam"
+      },
+      "repository": {
+        "name": "dashboard",
+        "nameWithOwner": "studio/dashboard"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [],
+      "comments": 1,
+      "isDraft": true,
+      "reviewDecision": null
+    },
+    {
+      "id": "demo-orbit-prs-202",
+      "number": 202,
+      "title": "Document the deployment workflow",
+      "url": "https://github.com/studio/orbit/pull/202",
+      "createdAt": "2026-08-03T09:00:00Z",
+      "updatedAt": "2026-09-04T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 2,
+      "isDraft": false,
+      "reviewDecision": "APPROVED"
+    },
+    {
+      "id": "demo-tiny-cloud-prs-202",
+      "number": 202,
+      "title": "Document the deployment workflow",
+      "url": "https://github.com/studio/tiny-cloud/pull/202",
+      "createdAt": "2026-08-03T09:00:00Z",
+      "updatedAt": "2026-09-04T10:00:00Z",
+      "author": {
+        "login": "jordan"
+      },
+      "repository": {
+        "name": "tiny-cloud",
+        "nameWithOwner": "studio/tiny-cloud"
+      },
+      "labels": [
+        {
+          "name": "bug",
+          "color": "d73a4a"
+        }
+      ],
+      "assignees": [],
+      "comments": 2,
+      "isDraft": false,
+      "reviewDecision": "APPROVED"
+    },
+    {
+      "id": "demo-orbit-prs-203",
+      "number": 203,
+      "title": "Cache language statistics during rendering",
+      "url": "https://github.com/studio/orbit/pull/203",
+      "createdAt": "2026-08-04T09:00:00Z",
+      "updatedAt": "2026-09-03T10:00:00Z",
+      "author": {
+        "login": "alex"
+      },
+      "repository": {
+        "name": "orbit",
+        "nameWithOwner": "studio/orbit"
+      },
+      "labels": [
+        {
+          "name": "enhancement",
+          "color": "a2eeef"
+        }
+      ],
+      "assignees": [
+        {
+          "login": "studio"
+        }
+      ],
+      "comments": 3,
+      "isDraft": false,
+      "reviewDecision": "CHANGES_REQUESTED"
+    }
+  ]
+}

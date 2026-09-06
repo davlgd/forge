@@ -1,0 +1,14 @@
+{
+  "name": "forge-dev",
+  "version": "0.1.0",
+  "private": true,
+  "packageManager": "bun@1.4.2",
+  "license": "Apache-2.0",
+  "type": "module",
+  "devDependencies": {
+    "@types/bun": "1.4.1",
+    "playwright": "1.63.0",
+    "prettier": "3.9.6",
+    "typescript": "7.0.2"
+  }
+}

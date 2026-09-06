@@ -1,0 +1,2 @@
+# Mise loads the optional local .env; deployment secrets are imported separately.
+env = false

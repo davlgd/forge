@@ -1,0 +1,10 @@
+/target/
+/node_modules/
+/.env
+/.env.*
+!/.env.example
+/test-results/
+/.clever.json
+*.log
+.DS_Store
+/dist/

@@ -1,0 +1,557 @@
+<!doctype html>
+<html lang="en" data-auth-mode="{{AUTH_MODE}}">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="theme-color" content="#f8f9fc" />
+    <title>Forge — GitHub Dashboard</title>
+    <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <script src="/theme.js"></script>
+    <link rel="stylesheet" href="/app.css" />
+    <script src="/app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <svg class="sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+      <defs>
+        <symbol id="i-grid" viewBox="0 0 24 24">
+          <rect x="3" y="3" width="7" height="7" rx="2" />
+          <rect x="14" y="3" width="7" height="7" rx="2" />
+          <rect x="3" y="14" width="7" height="7" rx="2" />
+          <rect x="14" y="14" width="7" height="7" rx="2" />
+        </symbol>
+        <symbol id="i-repo" viewBox="0 0 24 24">
+          <path
+            d="M5 20V5a2 2 0 0 1 2-2h12v18H7a2 2 0 0 1 0-4h12M9 7h6M9 11h4"
+          />
+        </symbol>
+        <symbol id="i-star" viewBox="0 0 24 24">
+          <path
+            d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9Z"
+          />
+        </symbol>
+        <symbol id="i-issue" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="9" />
+          <path d="M12 8v5M12 16h.01" />
+        </symbol>
+        <symbol id="i-pr" viewBox="0 0 24 24">
+          <circle cx="6" cy="5" r="2" />
+          <circle cx="6" cy="19" r="2" />
+          <circle cx="18" cy="19" r="2" />
+          <path d="M6 7v10m8-13-3 3 3 3m-3-3h3a4 4 0 0 1 4 4v6" />
+        </symbol>
+        <symbol id="i-arrow" viewBox="0 0 24 24">
+          <path d="M5 12h14m-6-6 6 6-6 6" />
+        </symbol>
+        <symbol id="i-external" viewBox="0 0 24 24">
+          <path
+            d="M14 3h7v7m0-7L10 14m0-11H5a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2v-5"
+          />
+        </symbol>
+        <symbol id="i-search" viewBox="0 0 24 24">
+          <circle cx="10.5" cy="10.5" r="6.5" />
+          <path d="m16 16 5 5" />
+        </symbol>
+        <symbol id="i-refresh" viewBox="0 0 24 24">
+          <path
+            d="M20 7a9 9 0 0 0-15-1L2 9m0-6v6h6m-4 8a9 9 0 0 0 15 1l3-3m0 6v-6h-6"
+          />
+        </symbol>
+        <symbol id="i-fork" viewBox="0 0 24 24">
+          <circle cx="6" cy="4" r="2" />
+          <circle cx="18" cy="4" r="2" />
+          <circle cx="12" cy="20" r="2" />
+          <path d="M6 6v3a3 3 0 0 0 3 3h6a3 3 0 0 0 3-3V6m-6 6v6" />
+        </symbol>
+        <symbol id="i-chevron" viewBox="0 0 24 24">
+          <path d="m7 10 5 5 5-5" />
+        </symbol>
+        <symbol id="i-lock" viewBox="0 0 24 24">
+          <rect x="5" y="10" width="14" height="11" rx="2" />
+          <path d="M8 10V6a4 4 0 0 1 8 0v4" />
+        </symbol>
+        <symbol id="i-github" viewBox="0 0 24 24">
+          <path
+            d="M9 20c-5 1.5-5-2.5-7-3m14 5v-4a3.5 3.5 0 0 0-1-2.7c3.3-.4 6.7-1.6 6.7-7.3A5.7 5.7 0 0 0 20 4a5.3 5.3 0 0 0-.1-4S18.6-.4 16 1.5a14 14 0 0 0-8 0C5.4-.4 4.1 0 4.1 0A5.3 5.3 0 0 0 4 4a5.7 5.7 0 0 0-1.7 4c0 5.7 3.4 6.9 6.7 7.3A3.5 3.5 0 0 0 8 18v4"
+          />
+        </symbol>
+        <symbol id="i-sun" viewBox="0 0 24 24">
+          <circle cx="12" cy="12" r="4" />
+          <path
+            d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"
+          />
+        </symbol>
+      </defs>
+    </svg>
+    <aside class="sidebar">
+      <a class="brand" href="/" aria-label="Forge home"
+        ><span class="brand-mark">f</span>forge<span class="brand-dot"
+          >.</span
+        ></a
+      >
+      <div class="workspace-label">WORKSPACE</div>
+      <div class="owner-menu">
+        <button
+          id="owner-toggle"
+          class="owner-control"
+          type="button"
+          aria-expanded="false"
+          aria-controls="owner-panel"
+          disabled
+        >
+          <span id="owner-avatar" class="avatar" aria-hidden="true">G</span>
+          <span class="owner-label-wrap"
+            ><span class="tiny-label">Workspace</span
+            ><span id="owner-label">Loading…</span></span
+          >
+          <svg aria-hidden="true"><use href="#i-chevron" /></svg>
+        </button>
+        <div id="owner-panel" class="account-panel" hidden>
+          <h2>Switch workspace</h2>
+          <ul id="owner-options" aria-label="Accounts and organizations"></ul>
+        </div>
+      </div>
+      <nav aria-label="Main navigation">
+        <button class="nav-item active" data-view="overview">
+          <svg><use href="#i-grid" /></svg>Overview
+        </button>
+        <button class="nav-item" data-view="popular">
+          <svg><use href="#i-star" /></svg>Most popular
+        </button>
+        <div class="nav-label">KEEP TRACK</div>
+        <button class="nav-item" data-view="repositories">
+          <svg><use href="#i-repo" /></svg>Repositories<span
+            id="nav-repos"
+            class="nav-count"
+            >—</span
+          >
+        </button>
+        <button class="nav-item" data-view="issues">
+          <svg><use href="#i-issue" /></svg>Open issues<span
+            id="nav-issues"
+            class="nav-count"
+            >—</span
+          >
+        </button>
+        <button class="nav-item" data-view="prs">
+          <svg><use href="#i-pr" /></svg>Pull requests<span
+            id="nav-prs"
+            class="nav-count"
+            >—</span
+          >
+        </button>
+      </nav>
+    </aside>
+    <main id="main-content" tabindex="-1">
+      <header class="topbar">
+        <div>
+          <span class="breadcrumb">Workspace</span><span class="slash">/</span
+          ><span id="breadcrumb-owner">GitHub</span>
+        </div>
+        <div class="profile-menu">
+          <button
+            id="profile-toggle"
+            class="profile-toggle"
+            type="button"
+            aria-label="Account and appearance"
+            aria-expanded="false"
+            aria-controls="profile-panel"
+          >
+            <span id="profile-avatar" class="avatar small" aria-hidden="true"
+              >G</span
+            >
+            <svg aria-hidden="true"><use href="#i-chevron" /></svg>
+          </button>
+          <div id="profile-panel" class="account-panel" hidden>
+            <div class="account-identity">
+              <span id="user-avatar" class="avatar" aria-hidden="true">G</span>
+              <div>
+                <strong id="user-name">Your GitHub account</strong
+                ><span id="user-login">Account settings</span>
+              </div>
+            </div>
+            <div class="connection">
+              <span class="status-dot" aria-hidden="true"></span
+              ><span id="connection-label">Connecting to GitHub</span>
+            </div>
+            <fieldset class="theme-options">
+              <legend>Appearance</legend>
+              <label
+                ><input
+                  type="radio"
+                  name="theme"
+                  value="system"
+                  checked
+                />System</label
+              >
+              <label
+                ><input type="radio" name="theme" value="light" />Light</label
+              >
+              <label
+                ><input type="radio" name="theme" value="dark" />Dark</label
+              >
+            </fieldset>
+            <a
+              id="logout"
+              class="account-signout"
+              href="/oauth2/sign_out"
+              hidden
+              >Sign out</a
+            >
+          </div>
+        </div>
+      </header>
+      <section class="page-heading">
+        <div>
+          <div class="eyebrow">YOUR GITHUB AT A GLANCE</div>
+          <h1 id="page-title" tabindex="-1">Overview</h1>
+          <p id="page-subtitle">
+            Your projects, their activity, and what needs your attention.
+          </p>
+        </div>
+        <button id="refresh" class="button" disabled>
+          <svg><use href="#i-refresh" /></svg>Refresh
+        </button>
+      </section>
+      <div
+        id="sync-status"
+        class="sync-status"
+        role="status"
+        aria-live="polite"
+        hidden
+      >
+        <div>
+          <span id="sync-message"></span
+          ><progress
+            id="sync-progress"
+            max="3"
+            value="0"
+            aria-label="Account synchronization"
+          ></progress>
+        </div>
+        <button id="sync-retry" class="button" hidden>Try again</button>
+        <a
+          id="sync-login"
+          class="text-button"
+          href="/oauth2/start?rd=%2F"
+          hidden
+          >Sign in with GitHub</a
+        >
+      </div>
+      <div id="notice" class="notice" role="status" hidden></div>
+      <div id="error" class="error-panel" role="alert" hidden>
+        <strong>Unable to load your projects</strong>
+        <p id="error-message"></p>
+        <a id="login" class="button primary" href="/oauth2/start?rd=%2F" hidden
+          >Sign in with GitHub<svg><use href="#i-arrow" /></svg
+        ></a>
+      </div>
+      <div id="loading" class="loading-panel" role="status">
+        <span class="loader"></span>
+        <div>
+          <strong>Loading your projects…</strong>
+          <p>Fetching repositories, issues, and pull requests.</p>
+        </div>
+      </div>
+      <div id="dashboard" hidden>
+        <section class="stats" aria-label="Account totals">
+          <button class="stat-card" data-view="repositories">
+            <span class="stat-top"
+              >Repositories<svg class="purple">
+                <use href="#i-repo" /></svg></span
+            ><strong id="stat-repos">0</strong
+            ><span id="stat-repos-note" class="stat-note"
+              >In this workspace</span
+            >
+          </button>
+          <button class="stat-card" data-view="popular">
+            <span class="stat-top"
+              >Stars<svg class="amber"><use href="#i-star" /></svg></span
+            ><strong id="stat-stars">0</strong
+            ><span id="stat-stars-note" class="stat-note"
+              >Across all your repositories</span
+            >
+          </button>
+          <button class="stat-card" data-view="issues">
+            <span class="stat-top"
+              >Open issues<svg class="green">
+                <use href="#i-issue" /></svg></span
+            ><strong id="stat-issues">0</strong
+            ><span class="stat-note"
+              >In active repositories<svg><use href="#i-arrow" /></svg
+            ></span>
+          </button>
+          <button class="stat-card" data-view="prs">
+            <span class="stat-top"
+              >Pull requests<svg class="purple"><use href="#i-pr" /></svg></span
+            ><strong id="stat-prs">0</strong
+            ><span class="stat-note"
+              >In active repositories<svg><use href="#i-arrow" /></svg
+            ></span>
+          </button>
+        </section>
+        <div id="overview-panels" class="overview-panels">
+          <section class="panel attention-panel">
+            <div class="panel-heading">
+              <div>
+                <h2><span class="attention-dot"></span>Open conversations</h2>
+                <p>Select an issue or PR count to see the conversations.</p>
+              </div>
+              <div class="work-shortcuts">
+                <button class="text-button" data-view="issues">
+                  View issues
+                </button>
+                <button class="text-button" data-view="prs">
+                  View pull requests
+                </button>
+              </div>
+            </div>
+            <div id="attention-list"></div>
+          </section>
+          <section class="panel popular-panel">
+            <div class="panel-heading">
+              <div>
+                <h2>Community favorites</h2>
+                <p>Your most starred repositories.</p>
+              </div>
+              <svg class="muted"><use href="#i-star" /></svg>
+            </div>
+            <div id="popular-list"></div>
+          </section>
+        </div>
+        <section class="panel repository-panel" id="repositories-section">
+          <div class="panel-heading">
+            <div class="repo-title">
+              <h2 id="repo-section-title">Repositories</h2>
+              <span id="result-count" class="pill">0</span>
+            </div>
+            <span id="scope-note" class="scope-note"
+              >One owner, all their projects.</span
+            >
+          </div>
+          <div class="table-toolbar">
+            <label class="search"
+              ><svg><use href="#i-search" /></svg
+              ><input
+                id="search"
+                type="search"
+                placeholder="Search repositories…"
+                aria-label="Search repositories"
+              /><kbd>/</kbd></label
+            >
+            <div class="filter-controls">
+              <select id="language" aria-label="Filter by language">
+                <option value="">All languages</option>
+              </select>
+            </div>
+          </div>
+          <div class="filter-line">
+            <label class="select-field"
+              >Repository type
+              <select id="repository-type">
+                <option value="all">All repositories</option>
+                <option value="original">
+                  Original repositories (not forks)
+                </option>
+                <option value="forks">Forked repositories</option>
+              </select>
+            </label>
+            <label class="check-label"
+              ><input id="archived" type="checkbox" />Include archives</label
+            >
+          </div>
+          <p id="repo-loading" class="section-loading" role="status" hidden>
+            Loading repositories…
+          </p>
+          <div class="table-scroll">
+            <table>
+              <thead>
+                <tr>
+                  <th scope="col">
+                    <button type="button" data-sort="name">
+                      Repository<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  </th>
+                  <th scope="col">
+                    <button type="button" data-sort="language">
+                      Language<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  </th>
+                  <th scope="col" class="number">
+                    <button type="button" data-sort="stars">
+                      Stars<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  </th>
+                  <th scope="col" class="number">
+                    <button type="button" data-sort="issues">
+                      Issues<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  </th>
+                  <th scope="col" class="number">
+                    <button type="button" data-sort="prs">
+                      PR<span class="sort-indicator" aria-hidden="true"></span>
+                    </button>
+                  </th>
+                  <th scope="col" class="date-col">
+                    <button type="button" data-sort="activity">
+                      Last push<span
+                        class="sort-indicator"
+                        aria-hidden="true"
+                      ></span>
+                    </button>
+                  </th>
+                  <th scope="col"><span class="sr-only">Open</span></th>
+                </tr>
+              </thead>
+              <tbody id="repo-rows"></tbody>
+            </table>
+          </div>
+          <div id="empty" class="empty" hidden>
+            <svg><use href="#i-search" /></svg>
+            <h3>No repositories in this view</h3>
+            <p>Try another filter or search.</p>
+            <button id="reset-filters" class="button">Reset filters</button>
+          </div>
+          <div class="table-footer">
+            <span
+              id="table-summary"
+              role="status"
+              aria-live="polite"
+              aria-atomic="true"
+            ></span
+            ><span>Repository and star totals include archives.</span>
+          </div>
+        </section>
+        <section
+          class="panel"
+          id="work-section"
+          hidden
+          aria-labelledby="work-section-title"
+        >
+          <div class="panel-heading">
+            <div>
+              <h2 id="work-section-title">Open issues</h2>
+              <p id="work-scope"></p>
+            </div>
+            <span id="work-count" class="pill"></span>
+          </div>
+          <div class="work-toolbar">
+            <label class="search">
+              <svg><use href="#i-search" /></svg>
+              <input
+                id="work-search"
+                type="search"
+                aria-label="Search conversation titles, numbers, repositories, authors or labels"
+                title="Search titles, #numbers, repositories, authors or labels"
+                placeholder="Search issues…"
+              />
+              <kbd>/</kbd>
+            </label>
+            <div class="work-filters">
+              <label class="select-field"
+                >Repository<select id="work-repository">
+                  <option value="">All repositories</option>
+                </select></label
+              >
+              <label class="select-field"
+                >Assignee<select id="work-assignee">
+                  <option value="all">Anyone</option>
+                  <option value="me">Assigned to me</option>
+                  <option value="unassigned">Unassigned</option>
+                </select></label
+              >
+              <label class="select-field" id="work-status-control" hidden
+                >Review status<select id="work-status">
+                  <option value="all">All statuses</option>
+                  <option value="review">Review required</option>
+                  <option value="changes">Changes requested</option>
+                  <option value="approved">Approved</option>
+                  <option value="draft">Drafts</option>
+                </select></label
+              >
+              <label class="select-field"
+                >Sort by<select id="work-sort">
+                  <option value="updated">Recently updated</option>
+                  <option value="oldest">Least recently updated</option>
+                  <option value="created">Newest opened</option>
+                </select></label
+              >
+            </div>
+          </div>
+          <div id="work-loading" class="loading-panel" role="status" hidden>
+            <span class="loader"></span
+            ><span id="work-loading-label">Loading conversations…</span>
+          </div>
+          <div id="work-error" class="work-error" role="alert" hidden>
+            <strong>Unable to load open conversations</strong>
+            <p id="work-error-message"></p>
+            <button id="work-retry" class="button">Try again</button
+            ><a
+              class="text-button"
+              href="/oauth2/start?rd=%2F"
+              id="work-login"
+              hidden
+              >Sign in with GitHub</a
+            >
+          </div>
+          <div id="work-content" hidden>
+            <ul id="work-list" aria-label="Open conversations"></ul>
+            <div id="work-empty" class="empty" hidden>
+              <h3 id="work-empty-title"></h3>
+              <p id="work-empty-message"></p>
+              <button id="work-reset" class="button">Clear filters</button>
+            </div>
+            <div class="work-more">
+              <button id="work-more" class="button" hidden>Show more</button>
+            </div>
+            <div class="table-footer">
+              <span
+                id="work-summary"
+                role="status"
+                aria-live="polite"
+                aria-atomic="true"
+              ></span
+              ><span id="work-sync"></span>
+            </div>
+          </div>
+        </section>
+        <section class="language-strip">
+          <div class="language-heading">
+            <span>WORKSPACE LANGUAGES</span
+            ><button
+              id="language-toggle"
+              class="text-button"
+              aria-expanded="false"
+              aria-controls="language-legend"
+              hidden
+            >
+              Show all languages
+            </button>
+          </div>
+          <div id="language-chart" aria-hidden="true"></div>
+          <div id="language-legend"></div>
+        </section>
+        <footer>
+          <span
+            ><span class="footer-logo">forge.</span> A workspace to move your
+            projects forward.</span
+          ><span id="sync-time"></span>
+        </footer>
+      </div>
+    </main>
+    <noscript>Enable JavaScript to view the dashboard.</noscript>
+  </body>
+</html>
